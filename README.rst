@@ -14,7 +14,7 @@ You can download gedit-pyflakes-plugin::
     $ wget -O gedit-pyflakes-plugin.tar.gz http://github.com/aniav/gedit-pyflakes-plugin/tarball/master
     $ tar -xzvf gedit-pyflakes-plugin.tar.gz
 
-Put the geditpyflakes.plugin file and the whole content directory into ~/.gnome2/gedit/.local/share/gedit/plugins::
+Put the geditpyflakes.plugin file and the whole content directory into ~/.local/share/gedit/plugins::
 
     $ cd aniav-gedit-pyflakes-plugin*
     $ mkdir ~/.local/share/gedit/plugins
