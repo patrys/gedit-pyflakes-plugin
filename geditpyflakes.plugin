@@ -1,0 +1,8 @@
+[Plugin]
+Loader=python
+Module=geditpyflakes
+IAge=3
+Name=Gedit Pyflakes Plugin, version 0.2.0
+Description=It is focused on identifying common errors quickly without executing Python code.
+Authors=Anna Warzecha <anna.warzecha@gmail.com>, Gustavo Rezende <nsigustavo@gmail.com>
+Website=https://github.com/aniav/gedit-pyflakes-plugin

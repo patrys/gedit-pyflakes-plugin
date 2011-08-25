@@ -1,17 +1,26 @@
-from  gedit import Plugin
+from gi.repository import Gedit, GObject
 from geditpyflakes.plugin import PyflakesPlugin
 
-class Geditpyflakes(Plugin):
-    def __init__(self):
-        Plugin.__init__(self)
-        self._instances = {}
+class Geditpyflakes(GObject.Object, Gedit.WindowActivatable):
+	__gtype_name__ = "GeditpyflakesInstance"
 
-    def activate(self, window):
-        self._instances[window] = PyflakesPlugin(window)
+	window = GObject.property(type=Gedit.Window)
 
-    def deactivate(self, window):
-        self._instances[window].deactivate()
-        del self._instances[window]
+	def __init__(self):
+		GObject.Object.__init__(self)
 
-    def update_ui(self, window):
-        self._instances[window].update_ui()
+	def _get_instance(self):
+		return self.window.get_data(self.__gtype_name__)
+
+	def _set_instance(self, instance):
+		self.window.set_data(self.__gtype_name__, instance)
+
+	def do_activate(self):
+		self._set_instance(PyflakesPlugin(self.window))
+
+	def do_deactivate(self):
+		self._get_instance().do_deactivate()
+		self._set_instance(None)
+
+	def do_update_state(self):
+		self._get_instance().do_update_state()

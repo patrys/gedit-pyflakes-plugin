@@ -1,9 +1,0 @@
-[Gedit Plugin]
-Loader=python
-Module=geditpyflakes
-IAge=2
-Name=Gedit Pyflakes Plugin, version 0.1.0
-Description=It is focused on identifying common errors quickly without executing Python code.
-Authors=Gustavo Rezende <nsigustavo@gmail.com>
-Copyright=Copyright © 2009 Gustavo Rezende\n
-Website=http://nsi.iff.edu.br

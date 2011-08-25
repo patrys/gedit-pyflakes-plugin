@@ -1,32 +1,32 @@
-:author: Gustavo Rezende <nsigustavo@gmail.com>
+:author: Anna Warzecha <anna.warzecha@gmail.com>, Gustavo Rezende <nsigustavo@gmail.com>
 
-Gedit Pyflakes Plugins
+Gedit Pyflakes Plugin
 ======================
 
-Geditpyflakes plugin allow users to run Pyflakes inside Gedit and show found pyflakes's error messages.
+gedit-pyflakes-plugin allows users to run Pyflakes inside Gedit and show found pyflakes' error messages.
 
 
-Get and install
+Download and install
 ===============
 
-You can download geditpyflakes::
+You can download gedit-pyflakes-plugin::
 
-    $ wget http://github.com/nsigustavo/geditpyflakes/tarball/master
-    $ tar -xzvf nsigustavo-geditpyflakes*.tar.gz
+    $ wget -O gedit-pyflakes-plugin.tar.gz http://github.com/aniav/gedit-pyflakes-plugin/tarball/master
+    $ tar -xzvf gedit-pyflakes-plugin.tar.gz
 
-Put the geditpyflakes.gedit-plugin file and the whole content directory into ~/.gnome2/gedit/plugins::
+Put the geditpyflakes.plugin file and the whole content directory into ~/.gnome2/gedit/.local/share/gedit/plugins::
 
-    $ cd nsigustavo-geditpyflakes*
-    $ mkdir ~/.gnome2/gedit/plugins
-    $ cp -rf * ~/.gnome2/gedit/plugins
+    $ cd aniav-gedit-pyflakes-plugin*
+    $ mkdir ~/.local/share/gedit/plugins
+    $ cp -rf * ~/.local/share/gedit/plugins
 
 Install dependences: pynotify and pyflakes
 
 In gedit main menu go to: Edit -> Preferences
 
-In Preferences dialog go to Plugins tab
+In Preferences dialog go to Plugins tab.
 
-Find 'Gedit Pyflakes Plugins' in plugin list and check it
+Find 'Gedit Pyflakes Plugin' in plugin list and enable it. Done.
 
 
 
