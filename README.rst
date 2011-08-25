@@ -30,15 +30,15 @@ Find 'Gedit Pyflakes Plugin' in plugin list and enable it. Done.
 
 
 
-Getting involved !
+Getting involved!
 ==================
 
 Gedit Pyflakes Plugins is development may be viewed and followed on github::
 
-  http://github.com/nsigustavo/geditpyflakes
+  http://github.com/aniav/gedit-pyflakes-plugin
 
 
 Retrieve the source code using git::
 
-    $ git clone git://github.com/nsigustavo/geditpyflakes.git
+    $ git clone git@github.com:aniav/gedit-pyflakes-plugin.git
 
