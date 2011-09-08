@@ -1,4 +1,4 @@
-:author: Anna Warzecha <anna.warzecha@gmail.com>, Gustavo Rezende <nsigustavo@gmail.com>
+:author: Anna Warzecha <anna.warzecha@gmail.com>, Gustavo Rezende <nsigustavo@gmail.com>, Patryk Zawadzki <patrys@pld-linux.org>
 
 Gedit Pyflakes Plugin
 ======================
