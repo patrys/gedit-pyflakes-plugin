@@ -91,8 +91,6 @@ class PyflakesPlugin(GObject.Object, Gedit.ViewActivatable):
             tag_type = (self.err_tag if isinstance(problem, PySyntaxError)
                         else self.warn_tag)
             document.apply_tag(tag_type, tag_start, tag_end)
-            from pprint import pprint
-            pprint(dir(document))
 
     def check(self, document):
         filename = document.get_short_name_for_display()
